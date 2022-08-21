@@ -120,14 +120,18 @@ public class App {
         // } else {
         //     System.out.println("you are still playing the game");
         // }
-        Scanner scanner = new Scanner(System.in);
-        String name = "";
-            while( name.isBlank()) {
-                System.out.println("Enter your name: ");
-                name = scanner.nextLine();
-            }
-            
-            System.out.println("Hello "+name);
+        // Scanner scanner = new Scanner(System.in);
+        // String name = "";
+        //     while( name.isBlank()) {
+        //         System.out.println("Enter your name: ");
+        //         name = scanner.nextLine();
+        //     }
+        //     System.out.println("Hello "+name);
+
+        for ( int i = 0 ; i <= 10 ; i ++  ) {
+            System.out.println(i);
+        }
+
 
 
     }
