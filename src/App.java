@@ -25,19 +25,23 @@ public class App {
         // String y = "kool-aid";
         // System.out.println(x);
         // System.out.println(y);
-        
+
         // scanner used to accept some user input;
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("What is your name?");
-        String name = scanner.nextLine();
-        System.out.println("How old are you ?");
-        int age = scanner.nextInt();
+        // Scanner scanner = new Scanner(System.in);
+        // System.out.println("What is your name?");
+        // String name = scanner.nextLine();
+        // System.out.println("How old are you ?");
+        // int age = scanner.nextInt();
         // the next line is importnat to clear the scanner after scan the int;
-        scanner.nextLine();
-        System.out.println("What is your favorite food ?");
-        String food = scanner.nextLine();
-        System.out.println("Hello "+name);
-        System.out.println("you are "+age+" years old");
-        System.out.println("And your favorite food is "+food);
+        // scanner.nextLine();
+        // System.out.println("What is your favorite food ?");
+        // String food = scanner.nextLine();
+        // System.out.println("Hello "+name);
+        // System.out.println("you are "+age+" years old");
+        // System.out.println("And your favorite food is "+food);
+
+        double friends = 10;
+        friends = friends/3;
+        System.out.println(friends);
     }
 }
