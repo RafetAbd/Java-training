@@ -84,24 +84,41 @@ public class App {
         //     System.out.println("you are minor");
         // }
 
-        String day = "Monday";
-        switch(day) {
-            case "Sunday": System.out.println("it is Sunday");
+        // String day = "Monday";
+        // switch(day) {
+        //     case "Sunday": System.out.println("it is Sunday");
             // break is so important so it out excute everthing after the matching case
-            break;
-            case "Monday": System.out.println("it is Monday");
-            break;
-            case "Tuesday": System.out.println("it is Tuesday");
-            break;
-            case "Wednesday": System.out.println("it is Wednesday");
-            break;
-            case "Thuresday": System.out.println("it is Thuresday");
-            break;
-            case "Friday": System.out.println("it is Friday");
-            break;
-            case "Saturday": System.out.println("it is Saturday");
-            break;
-            default: System.out.println("that is not a day");
+        //     break;
+        //     case "Monday": System.out.println("it is Monday");
+        //     break;
+        //     case "Tuesday": System.out.println("it is Tuesday");
+        //     break;
+        //     case "Wednesday": System.out.println("it is Wednesday");
+        //     break;
+        //     case "Thuresday": System.out.println("it is Thuresday");
+        //     break;
+        //     case "Friday": System.out.println("it is Friday");
+        //     break;
+        //     case "Saturday": System.out.println("it is Saturday");
+        //     break;
+        //     default: System.out.println("that is not a day");
+        // }
+
+        // int temp = 90;
+        // if ( temp > 100 ) {
+        //     System.out.println("it is hot");
+        // } else if ( temp <= 100 && temp >= 40 ) {
+        //     System.out.println("it is warm");
+        // } else {
+        //     System.out.println("it is cold");
+        // }
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("you are playing a game! press q or Q to quit");
+        String response = scanner.next();
+        if ( response.equals("q") || response.equals("Q")) {
+            System.out.println("you quit the game");
+        } else {
+            System.out.println("you are still playing the game");
         }
 
 
