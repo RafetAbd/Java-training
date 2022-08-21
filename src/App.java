@@ -1,5 +1,8 @@
 // import Scanner
 import java.util.Scanner;
+
+import javax.sound.sampled.BooleanControl;
+
 // import javax.swing.JOptionPane;
 import java.util.Random;
 
@@ -156,20 +159,28 @@ public class App {
         // }
         
         // these are two ways to decalre array in java.
-        String[][] houses = new String[4][4];        
-        String[][] cars = {
-            {"BMW", "Ford"},
-            {"Tesla", "Volvo"},
-            {"VW", "kia"}
-        };
-        for ( int i = 0 ; i < cars.length ; i ++ ) {
-            System.out.println();
-            for ( int j = 0 ; j < cars[i].length ; j ++ ) {
-                System.out.print(cars[i][j]+" ");
-            }
-        }
+        // String[][] houses = new String[4][4];        
+        // String[][] cars = {
+        //     {"BMW", "Ford"},
+        //     {"Tesla", "Volvo"},
+        //     {"VW", "kia"}
+        // };
+        // for ( int i = 0 ; i < cars.length ; i ++ ) {
+        //     System.out.println();
+        //     for ( int j = 0 ; j < cars[i].length ; j ++ ) {
+        //         System.out.print(cars[i][j]+" ");
+        //     }
+        // }
 
+        String name = "rafet";
+        // Boolean result = name.equals("rafet");
+        // int result = name.length();
+        // char result = name.charAt(1);
+        // int result = name.indexOf("f");
+        // boolean result = name.isEmpty();
+        String result = name.toUpperCase();
 
-
+        System.out.println(result);
+        
     }
 }
