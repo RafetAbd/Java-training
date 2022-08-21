@@ -112,14 +112,22 @@ public class App {
         // } else {
         //     System.out.println("it is cold");
         // }
+        // Scanner scanner = new Scanner(System.in);
+        // System.out.println("you are playing a game! press q or Q to quit");
+        // String response = scanner.next();
+        // if ( response.equals("q") || response.equals("Q")) {
+        //     System.out.println("you quit the game");
+        // } else {
+        //     System.out.println("you are still playing the game");
+        // }
         Scanner scanner = new Scanner(System.in);
-        System.out.println("you are playing a game! press q or Q to quit");
-        String response = scanner.next();
-        if ( response.equals("q") || response.equals("Q")) {
-            System.out.println("you quit the game");
-        } else {
-            System.out.println("you are still playing the game");
-        }
+        String name = "";
+            while( name.isBlank()) {
+                System.out.println("Enter your name: ");
+                name = scanner.nextLine();
+            }
+            
+            System.out.println("Hello "+name);
 
 
     }
