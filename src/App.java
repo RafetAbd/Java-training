@@ -1,6 +1,7 @@
 // import Scanner
 import java.util.Scanner;
 // import javax.swing.JOptionPane;
+import java.util.Random;
 
 public class App {
     public static void main(String[] args) {
@@ -53,16 +54,27 @@ public class App {
         // double height = Double.parseDouble(JOptionPane.showInputDialog("and your height ?"));
         // JOptionPane.showMessageDialog(null, "and your height is "+height);
                 
-        double x;
-        double y;
-        double z;
-        Scanner scanner= new Scanner(System.in);
-        System.out.println("enter side x");
-        x = scanner.nextDouble();
-        System.out.println("enter side y");
-        y = scanner.nextDouble();
-        z = Math.sqrt((x*x)+(y*y));
-        System.out.println("Hypotenuse is: "+z);
-        scanner.close();
+        // double x;
+        // double y;
+        // double z;
+        // Scanner scanner= new Scanner(System.in);
+        // System.out.println("enter side x");
+        // x = scanner.nextDouble();
+        // System.out.println("enter side y");
+        // y = scanner.nextDouble();
+        // z = Math.sqrt((x*x)+(y*y));
+        // System.out.println("Hypotenuse is: "+z);
+        // scanner.close();
+
+        Random random = new Random();
+        // in the next line we put the limit between (), so the random number will be between 1-5 then we added 1 to include the six
+        // without that the random number will be too large.
+        // int x = random.nextInt(6)+1;
+        // the next one willl generate a random value between 0 to 1
+        // double y = random.nextDouble();
+        // generate random boolean value.
+        boolean z = random.nextBoolean();
+        System.out.println(z);
+
     }
 }
