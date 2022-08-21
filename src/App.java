@@ -66,15 +66,23 @@ public class App {
         // System.out.println("Hypotenuse is: "+z);
         // scanner.close();
 
-        Random random = new Random();
+        // Random random = new Random();
         // in the next line we put the limit between (), so the random number will be between 1-5 then we added 1 to include the six
         // without that the random number will be too large.
         // int x = random.nextInt(6)+1;
         // the next one willl generate a random value between 0 to 1
         // double y = random.nextDouble();
         // generate random boolean value.
-        boolean z = random.nextBoolean();
-        System.out.println(z);
+        // boolean z = random.nextBoolean();
+        // System.out.println(z);
+        int age = 43;
+        if ( age >= 75 ) {
+            System.out.println("you are too old");
+        } else if ( age >= 18 ) {
+            System.out.println("you are old enough");
+        } else {
+            System.out.println("you are minor");
+        }
 
     }
 }
