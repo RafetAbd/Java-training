@@ -128,10 +128,26 @@ public class App {
         //     }
         //     System.out.println("Hello "+name);
 
-        for ( int i = 0 ; i <= 10 ; i ++  ) {
-            System.out.println(i);
-        }
+        // for ( int i = 0 ; i <= 10 ; i ++  ) {
+        //     System.out.println(i);
+        // }
 
+        Scanner scanner = new Scanner(System.in);
+        int rows;
+        int col;
+        String symbol = "";
+        System.out.println("enter # of rows");
+        rows = scanner.nextInt();
+        System.out.println("enter # of columns");
+        col = scanner.nextInt();
+        System.out.println("enter symbol to use");
+        symbol = scanner.next();
+        for ( int i  = 0 ; i < rows ; i ++ ) {
+            for ( int j = 0 ; j< col ; j ++ ) {
+                System.out.print(symbol);
+            }
+            System.out.println();
+        }
 
 
     }
