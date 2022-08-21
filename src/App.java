@@ -75,14 +75,35 @@ public class App {
         // generate random boolean value.
         // boolean z = random.nextBoolean();
         // System.out.println(z);
-        int age = 43;
-        if ( age >= 75 ) {
-            System.out.println("you are too old");
-        } else if ( age >= 18 ) {
-            System.out.println("you are old enough");
-        } else {
-            System.out.println("you are minor");
+        // int age = 43;
+        // if ( age >= 75 ) {
+        //     System.out.println("you are too old");
+        // } else if ( age >= 18 ) {
+        //     System.out.println("you are old enough");
+        // } else {
+        //     System.out.println("you are minor");
+        // }
+
+        String day = "Monday";
+        switch(day) {
+            case "Sunday": System.out.println("it is Sunday");
+            // break is so important so it out excute everthing after the matching case
+            break;
+            case "Monday": System.out.println("it is Monday");
+            break;
+            case "Tuesday": System.out.println("it is Tuesday");
+            break;
+            case "Wednesday": System.out.println("it is Wednesday");
+            break;
+            case "Thuresday": System.out.println("it is Thuresday");
+            break;
+            case "Friday": System.out.println("it is Friday");
+            break;
+            case "Saturday": System.out.println("it is Saturday");
+            break;
+            default: System.out.println("that is not a day");
         }
+
 
     }
 }
