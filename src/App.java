@@ -1,6 +1,6 @@
 // import Scanner
-// import java.util.Scanner;
-import javax.swing.JOptionPane;
+import java.util.Scanner;
+// import javax.swing.JOptionPane;
 
 public class App {
     public static void main(String[] args) {
@@ -45,13 +45,24 @@ public class App {
         // friends = friends/3;
         // System.out.println(friends);
 
-        String name = JOptionPane.showInputDialog("Enter your name");
-        JOptionPane.showMessageDialog(null, "Hello "+name);
+        // String name = JOptionPane.showInputDialog("Enter your name");
+        // JOptionPane.showMessageDialog(null, "Hello "+name);
         // adding parseInt to convert the input from string to int
-        int age = Integer.parseInt(JOptionPane.showInputDialog("and your age ?"));
-        JOptionPane.showMessageDialog(null, "and your are "+age+" years old!");
-        double height = Double.parseDouble(JOptionPane.showInputDialog("and your height ?"));
-        JOptionPane.showMessageDialog(null, "and your height is "+height);
-
+        // int age = Integer.parseInt(JOptionPane.showInputDialog("and your age ?"));
+        // JOptionPane.showMessageDialog(null, "and your are "+age+" years old!");
+        // double height = Double.parseDouble(JOptionPane.showInputDialog("and your height ?"));
+        // JOptionPane.showMessageDialog(null, "and your height is "+height);
+                
+        double x;
+        double y;
+        double z;
+        Scanner scanner= new Scanner(System.in);
+        System.out.println("enter side x");
+        x = scanner.nextDouble();
+        System.out.println("enter side y");
+        y = scanner.nextDouble();
+        z = Math.sqrt((x*x)+(y*y));
+        System.out.println("Hypotenuse is: "+z);
+        scanner.close();
     }
 }
