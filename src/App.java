@@ -1,5 +1,6 @@
 // import Scanner
-import java.util.Scanner;
+// import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 public class App {
     public static void main(String[] args) {
@@ -40,8 +41,17 @@ public class App {
         // System.out.println("you are "+age+" years old");
         // System.out.println("And your favorite food is "+food);
 
-        double friends = 10;
-        friends = friends/3;
-        System.out.println(friends);
+        // double friends = 10;
+        // friends = friends/3;
+        // System.out.println(friends);
+
+        String name = JOptionPane.showInputDialog("Enter your name");
+        JOptionPane.showMessageDialog(null, "Hello "+name);
+        // adding parseInt to convert the input from string to int
+        int age = Integer.parseInt(JOptionPane.showInputDialog("and your age ?"));
+        JOptionPane.showMessageDialog(null, "and your are "+age+" years old!");
+        double height = Double.parseDouble(JOptionPane.showInputDialog("and your height ?"));
+        JOptionPane.showMessageDialog(null, "and your height is "+height);
+
     }
 }
