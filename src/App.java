@@ -230,7 +230,20 @@ public class App {
             // int y = 4;
             // int d = add(x, y);
             // System.out.println(d);
-            System.out.println(add(3,4,2,5));
+            // System.out.println(add(3,4,2,5));
+            
+            // final means that the variable vaalue cannot be updated
+            // final double pi = 3.14;
+            // System.out.println(pi);
+
+            // this is how to create an object from another class in different file
+            Car myCar = new Car();
+            Car myCarTwo = new Car();
+            System.out.println(myCar.make);
+            System.out.println(myCarTwo.model);
+            myCar.drive();
+            myCarTwo.brake();
+
     }
 
     
@@ -244,17 +257,17 @@ public class App {
     // }
 
     // overloaded method: methods that have the same name but have different parameters.
-    static int add(int a, int b) {
-        System.out.println("this is overloaded method 1");
-        return a + b;
-    }
-    static int add(int a, int b, int c) {
-        System.out.println("this is overloaded method 2");
-        return a + b + c;
-    }
-    static int add(int a, int b, int c, int d) {
-        System.out.println("this is overloaded method 3");
-        return a + b + c + d;
-    }
+    // static int add(int a, int b) {
+    //     System.out.println("this is overloaded method 1");
+    //     return a + b;
+    // }
+    // static int add(int a, int b, int c) {
+    //     System.out.println("this is overloaded method 2");
+    //     return a + b + c;
+    // }
+    // static int add(int a, int b, int c, int d) {
+    //     System.out.println("this is overloaded method 3");
+    //     return a + b + c + d;
+    // }
 
 }
