@@ -6,6 +6,7 @@ import javax.sound.sampled.BooleanControl;
 import java.util.ArrayList;
 // import javax.swing.JOptionPane;
 import java.util.Random;
+import java.util.*;
 
 public class App {
     public static void main(String[] args) {
@@ -182,18 +183,38 @@ public class App {
         // String result = name.toUpperCase();
         // System.out.println(result);
 
-        ArrayList<String> food = new ArrayList<String>();
-        food.add("pizza");
-        food.add("hotdog");
-        food.add("burger");
+        // ArrayList<String> food = new ArrayList<String>();
+        // food.add("pizza");
+        // food.add("hotdog");
+        // food.add("burger");
         // change value at certain index
-        food.set(0, "sushi");
+        // food.set(0, "sushi");
         // remove element from certain index
-        food.remove(1);
+        // food.remove(1);
         // pay attension to the for loop and how to access the element in the next two lines
-        for ( int i = 0 ; i < food.size() ; i ++ ) {
-            System.out.println(food.get(i));
-        }
+        // for ( int i = 0 ; i < food.size() ; i ++ ) {
+        //     System.out.println(food.get(i));
+        // }
+
+
+            ArrayList<ArrayList<String>> groceryList = new ArrayList<>();
+            ArrayList<String> bakeryList = new ArrayList();
+            bakeryList.add("pasta");
+            bakeryList.add("bread");
+            bakeryList.add("cake");
+            groceryList.add(bakeryList);
+            ArrayList<String> produceList = new ArrayList();
+            produceList.add("tomatoes");
+            produceList.add("peppers");
+            produceList.add("apples");
+            groceryList.add(produceList);
+            ArrayList<String> drinkList = new ArrayList();
+            drinkList.add("peppsi");
+            drinkList.add("water");
+            groceryList.add(drinkList);
+
+            System.out.println(groceryList);
+            System.out.println(groceryList.get(0).get(2));
 
     }
 }
