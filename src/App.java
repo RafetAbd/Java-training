@@ -196,25 +196,34 @@ public class App {
         //     System.out.println(food.get(i));
         // }
 
+            // ArrayList<ArrayList<String>> groceryList = new ArrayList<>();
+            // ArrayList<String> bakeryList = new ArrayList();
+            // bakeryList.add("pasta");
+            // bakeryList.add("bread");
+            // bakeryList.add("cake");
+            // groceryList.add(bakeryList);
+            // ArrayList<String> produceList = new ArrayList();
+            // produceList.add("tomatoes");
+            // produceList.add("peppers");
+            // produceList.add("apples");
+            // groceryList.add(produceList);
+            // ArrayList<String> drinkList = new ArrayList();
+            // drinkList.add("peppsi");
+            // drinkList.add("water");
+            // groceryList.add(drinkList);
+            // System.out.println(groceryList);
+            // System.out.println(groceryList.get(0).get(2));
 
-            ArrayList<ArrayList<String>> groceryList = new ArrayList<>();
-            ArrayList<String> bakeryList = new ArrayList();
-            bakeryList.add("pasta");
-            bakeryList.add("bread");
-            bakeryList.add("cake");
-            groceryList.add(bakeryList);
-            ArrayList<String> produceList = new ArrayList();
-            produceList.add("tomatoes");
-            produceList.add("peppers");
-            produceList.add("apples");
-            groceryList.add(produceList);
-            ArrayList<String> drinkList = new ArrayList();
-            drinkList.add("peppsi");
-            drinkList.add("water");
-            groceryList.add(drinkList);
+            // String[] animals = {"cat", "dog", "bird"};
+            ArrayList<String> animals = new ArrayList<String>();
+            animals.add("cat");
+            animals.add("dog");
+            animals.add("bird");
+            for ( String i : animals ) {
+                System.out.println(i);
+            }
 
-            System.out.println(groceryList);
-            System.out.println(groceryList.get(0).get(2));
+
 
     }
 }
