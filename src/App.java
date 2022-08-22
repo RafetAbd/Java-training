@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 import javax.sound.sampled.BooleanControl;
 
+import java.util.ArrayList;
 // import javax.swing.JOptionPane;
 import java.util.Random;
 
@@ -172,15 +173,27 @@ public class App {
         //     }
         // }
 
-        String name = "rafet";
+        // String name = "rafet";
         // Boolean result = name.equals("rafet");
         // int result = name.length();
         // char result = name.charAt(1);
         // int result = name.indexOf("f");
         // boolean result = name.isEmpty();
-        String result = name.toUpperCase();
+        // String result = name.toUpperCase();
+        // System.out.println(result);
 
-        System.out.println(result);
-        
+        ArrayList<String> food = new ArrayList<String>();
+        food.add("pizza");
+        food.add("hotdog");
+        food.add("burger");
+        // change value at certain index
+        food.set(0, "sushi");
+        // remove element from certain index
+        food.remove(1);
+        // pay attension to the for loop and how to access the element in the next two lines
+        for ( int i = 0 ; i < food.size() ; i ++ ) {
+            System.out.println(food.get(i));
+        }
+
     }
 }
