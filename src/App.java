@@ -215,15 +215,31 @@ public class App {
             // System.out.println(groceryList.get(0).get(2));
 
             // String[] animals = {"cat", "dog", "bird"};
-            ArrayList<String> animals = new ArrayList<String>();
-            animals.add("cat");
-            animals.add("dog");
-            animals.add("bird");
-            for ( String i : animals ) {
-                System.out.println(i);
-            }
+            // ArrayList<String> animals = new ArrayList<String>();
+            // animals.add("cat");
+            // animals.add("dog");
+            // animals.add("bird");
+            // for ( String i : animals ) {
+            //     System.out.println(i);
+            // }
 
-
-
+            // String name = "Rafet";
+            // int age = 21;
+            // hello(name, age);
+            int x = 3;
+            int y = 4;
+            int d = add(x, y);
+            System.out.println(d);
     }
+
+    
+
+    // static void hello(String x, int y) {
+    //     System.out.println("Hello "+x+" and you are "+y+" years old");
+    // }
+    static int add(int x, int y) {
+        int z = x+y;
+        return z;
+    }
+
 }
