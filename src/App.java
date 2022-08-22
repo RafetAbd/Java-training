@@ -226,10 +226,11 @@ public class App {
             // String name = "Rafet";
             // int age = 21;
             // hello(name, age);
-            int x = 3;
-            int y = 4;
-            int d = add(x, y);
-            System.out.println(d);
+            // int x = 3;
+            // int y = 4;
+            // int d = add(x, y);
+            // System.out.println(d);
+            System.out.println(add(3,4,2,5));
     }
 
     
@@ -237,9 +238,23 @@ public class App {
     // static void hello(String x, int y) {
     //     System.out.println("Hello "+x+" and you are "+y+" years old");
     // }
-    static int add(int x, int y) {
-        int z = x+y;
-        return z;
+    // static int add(int x, int y) {
+    //     int z = x+y;
+    //     return z;
+    // }
+
+    // overloaded method: methods that have the same name but have different parameters.
+    static int add(int a, int b) {
+        System.out.println("this is overloaded method 1");
+        return a + b;
+    }
+    static int add(int a, int b, int c) {
+        System.out.println("this is overloaded method 2");
+        return a + b + c;
+    }
+    static int add(int a, int b, int c, int d) {
+        System.out.println("this is overloaded method 3");
+        return a + b + c + d;
     }
 
 }
