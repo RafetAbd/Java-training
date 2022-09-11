@@ -279,7 +279,14 @@ public class App {
     //     human1.eat();
     //     human2.drink();
 
-    DiceRoller diceRoller = new DiceRoller();
+    // DiceRoller diceRoller = new DiceRoller();
+    Pizza pizza = new Pizza("t","t", "m");
+
+    System.out.println("here are the ingridiants for your pizza:");
+    System.out.println(pizza.bread);
+    System.out.println(pizza.sause);
+    System.out.println(pizza.topping);
+    System.out.println(pizza.cheese);
 
     }
 }
