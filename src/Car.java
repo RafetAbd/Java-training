@@ -7,6 +7,12 @@ public class Car {
     String color = "black";
     double price = 50000;
 
+
+    // override the toString method
+    public String toString() {
+        return  make + "\n" + color + "\n" + model + "\n" + year;
+    }
+
     void drive() {
         System.out.println("you are driving the car");
     }

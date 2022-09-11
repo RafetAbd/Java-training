@@ -280,13 +280,17 @@ public class App {
     //     human2.drink();
 
     // DiceRoller diceRoller = new DiceRoller();
-    Pizza pizza = new Pizza("t","t", "m");
+    // Pizza pizza = new Pizza("t","t", "m");
 
-    System.out.println("here are the ingridiants for your pizza:");
-    System.out.println(pizza.bread);
-    System.out.println(pizza.sause);
-    System.out.println(pizza.topping);
-    System.out.println(pizza.cheese);
+    // System.out.println("here are the ingridiants for your pizza:");
+    // System.out.println(pizza.bread);
+    // System.out.println(pizza.sause);
+    // System.out.println(pizza.topping);
+    // System.out.println(pizza.cheese);
+
+    Car car = new Car();
+
+    System.out.println(car.toString());
 
     }
 }
