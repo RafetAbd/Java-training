@@ -288,9 +288,21 @@ public class App {
     // System.out.println(pizza.topping);
     // System.out.println(pizza.cheese);
 
-    Car car = new Car();
+    // Car car = new Car();
 
-    System.out.println(car.toString());
+    // System.out.println(car.toString());
+
+    
+
+    Food food1 = new Food("pizza");
+    Food food2 = new Food("hotdog");
+    Food food3 = new Food("icecream");
+
+    Food[] refrigerator = {food1,food2,food3};
+
+    System.out.println(refrigerator[0].name);
+    System.out.println(refrigerator[1].name);
+    System.out.println(refrigerator[2].name);
 
     }
 }
