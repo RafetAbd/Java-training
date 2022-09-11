@@ -271,13 +271,15 @@ public class App {
     // }
 
     // create an object for class Human
-    Human human1 = new Human("Rick", 40, 190.3);
-    Human human2 = new Human("scott", 20 , 129);
+    // Human human1 = new Human("Rick", 40, 190.3);
+    // Human human2 = new Human("scott", 20 , 129);
 
-        System.out.println(human1.name);
-        System.out.println(human2.age);
-        human1.eat();
-        human2.drink();
+    //     System.out.println(human1.name);
+    //     System.out.println(human2.age);
+    //     human1.eat();
+    //     human2.drink();
+
+    DiceRoller diceRoller = new DiceRoller();
 
     }
 }
