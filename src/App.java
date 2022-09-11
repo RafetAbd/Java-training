@@ -294,15 +294,23 @@ public class App {
 
     
 
-    Food food1 = new Food("pizza");
-    Food food2 = new Food("hotdog");
-    Food food3 = new Food("icecream");
+    // Food food1 = new Food("pizza");
+    // Food food2 = new Food("hotdog");
+    // Food food3 = new Food("icecream");
 
-    Food[] refrigerator = {food1,food2,food3};
+    // Food[] refrigerator = {food1,food2,food3};
 
-    System.out.println(refrigerator[0].name);
-    System.out.println(refrigerator[1].name);
-    System.out.println(refrigerator[2].name);
+    // System.out.println(refrigerator[0].name);
+    // System.out.println(refrigerator[1].name);
+    // System.out.println(refrigerator[2].name);
+
+    Garage garage = new Garage();
+    Car car1 = new Car("BMW");
+    Car car2 = new Car("TESLA");
+
+
+    garage.park(car1);
+    garage.park(car2);
 
     }
 }
